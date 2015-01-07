@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ <!--所有的灯光数量及结构-->
+<lights>
+    <lights__list>
+    <!--一个灯光的结构，需要添加灯光时按照下面的格式-->
+    <lightinfo>
+        <light_name>大厅灯1</light_name><!--灯光的名称-->
+        <isBrightness_control>true</isBrightness_control><!--是否是可调亮度灯光，是则为true,否则为false-->
+        <light_id>1</light_id><!--灯光id，int型-->
+    </lightinfo>
+	<!--第二个灯光-->
+	 <lightinfo>
+        <light_name>大厅灯2</light_name><!--灯光的名称-->
+        <isBrightness_control>true</isBrightness_control><!--是否是可调亮度灯光，是则为true,否则为false-->
+        <light_id>2</light_id><!--灯光id，int型-->
+    </lightinfo>
+	<!--第三个灯光，以后扩展的不需要再说明-->
+	 <lightinfo>
+        <light_name>大厅灯3</light_name><!--灯光的名称-->
+        <isBrightness_control>false</isBrightness_control><!--是否是可调亮度灯光，是则为true,否则为false-->
+        <light_id>3</light_id><!--灯光id，int型-->
+    </lightinfo>
+    <!--需要添加灯光则在后面添加-->
+   </lights__list>
+</lights>
