@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <include 
+        android:id="@+id/title_bar"
+        layout="@layout/include_title_bar"/>
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_below="@+id/title_bar"
+        android:layout_above="@+id/lay_bottom"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        
+    </RelativeLayout>
+	<LinearLayout
+	    android:id="@+id/lay_bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/dimen_80px"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal"
+	    android:background="@color/dock_selected_color">
+    <TextView 
+        android:id="@+id/tab_1"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/bottom_tab_1"/>
+     <TextView 
+        android:id="@+id/tab_2"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/bottom_tab_2"/>
+     <TextView 
+        android:id="@+id/tab_3"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/bottom_tab_3"/>
+     <TextView 
+        android:id="@+id/tab_4"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/bottom_tab_4"/>
+	</LinearLayout>
+</RelativeLayout>
