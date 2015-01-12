@@ -5,5 +5,16 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_spalish">SpalishActivity</string>
-
+	
+    <string name="bottom_tab_1">房间控制</string>
+    <string name="bottom_tab_2">酒店介绍</string>
+    <string name="bottom_tab_3">我的消息</string>
+    <string name="bottom_tab_4">设置</string>
+    <string name="menu_light">灯光照明</string>
+    <string name="menu_tv">电视摇控</string>
+    <string name="menu_service">服务信息</string>
+    <string name="menu_bgmusic">背景音乐</string>
+    <string name="menu_air_conditioning">空调控制</string>
+    <string name="menu_curtain">窗帘模式</string>
+    <string name="menu_scene">情景模式</string>
 </resources>
