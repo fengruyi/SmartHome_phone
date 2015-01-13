@@ -10,6 +10,7 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
+        android:name="com.android.smarthome_phone.MyApplicatioin"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
@@ -26,7 +27,16 @@
             android:name="com.android.smarthome_phone.ui.MainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            
+        </activity>
+        <activity 
+         android:name="com.android.smarthome_phone.ui.LightsControlActivity"
+         android:launchMode="singleTask"
+         android:screenOrientation="portrait"
+         android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            
+        </activity>
         <receiver 
             android:name="com.android.smarthome_phone.ui.ConnectionChangeReceive">
             <intent-filter >

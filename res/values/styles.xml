@@ -10,8 +10,6 @@
     <style name="AppTheme" parent="AppBaseTheme">
          <!-- 无标题栏 -->
    	    <item name="android:windowNoTitle">true</item>  
-   	
-        <item name="android:background">@android:color/white</item>
        
     </style>
 

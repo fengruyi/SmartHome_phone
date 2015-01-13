@@ -70,9 +70,11 @@ public class SpalishActivity extends BaseActivity {
 				try {
 				 Logger.e("SpalishActivity", "xml 解释");
 				 XStream	xstream = new XStream(new DomDriver()); 
+				 xstream.alias("lights", Lights.class);//必须加，否则默认是含有包全全路径的名称
+			     xstream.alias("lightinfo", LightInfo.class);
 				 Lights lights_ =  (Lights) xstream.fromXML(getAssets().open("lightinfo.xml"));
 				 MyApplicatioin.getInstance().setmDevice(lights_);
-				 PrefsUtil.getInstance().putString("deviceinfo", JSON.toJSONString(lights_));
+				 PrefsUtil.getInstance().putString("deviceinfo", JSON.toJSONString(lights_)).commit();;
 				 Logger.e("SpalishActivity", "list-->"+lights_);
 				for (LightInfo lightInfo : lights_.getLights_list()) {
 					Logger.e("SpalishActivity", "lightInfo"+lightInfo.toString());
@@ -94,7 +96,7 @@ public class SpalishActivity extends BaseActivity {
 				public void run() {
 					Intent intent = new Intent(SpalishActivity.this,MainActivity.class);
 					startActivity(intent);
-					
+					finish();
 				}
 			},2*1000);
 			
